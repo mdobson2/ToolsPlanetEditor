@@ -59,7 +59,7 @@ public class PlanetBaseInspector : Editor {
         EditorGUILayout.LabelField("Features");
         EditorGUILayout.BeginVertical("box");
         {
-            content.text = "Elevation Range (in celsius):";
+            content.text = "Temperature Range (in celsius):";
             content.tooltip = "The highest and lowest temporature that this planet will reach \nMeasured in celsius \nEarth's average temperature is 16C";
             EditorGUILayout.MinMaxSlider(content, ref planetBaseReference.lowTemp, ref planetBaseReference.highTemp, -100, 100);
             EditorGUILayout.BeginHorizontal();
